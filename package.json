@@ -1,0 +1,37 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "wdio": "wdio run wdio.conf.js",
+    "chrome": "npx cross-env ENV=chrome wdio --suite",
+    "firefox": "npx cross-env ENV=firefox wdio --suite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alekseiskiselei/Framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alekseiskiselei/Framework/issues"
+  },
+  "homepage": "https://github.com/Alekseiskiselei/Framework#readme",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.16.11",
+    "@wdio/cli": "^7.16.12",
+    "@wdio/local-runner": "^7.16.12",
+    "@wdio/mocha-framework": "^7.16.11",
+    "@wdio/selenium-standalone-service": "^7.16.11",
+    "@wdio/spec-reporter": "^7.16.11",
+    "chromedriver": "^96.0.0",
+    "wdio-chromedriver-service": "^7.2.2"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "yargs": "^17.3.1"
+  }
+}

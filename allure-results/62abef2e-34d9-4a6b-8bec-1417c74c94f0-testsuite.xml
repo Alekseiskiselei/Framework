@@ -1,0 +1,122 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1641220097670' stop='1641220137973'>
+    <name>Open web app, set parametrs and check them</name>
+    <title>Open web app, set parametrs and check them</title>
+    <test-cases>
+        <test-case start='1641220097670' status='passed' stop='1641220125995'>
+            <name>should VM class be regular</name>
+            <title>should VM class be regular</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1641220125996' status='passed' stop='1641220126115'>
+            <name>should Instance type be n1-standard-8</name>
+            <title>should Instance type be n1-standard-8</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1641220126115' status='failed' stop='1641220126178'>
+            <name>should Region be Frankfurt</name>
+            <title>should Region be Frankfurt</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 'Region: Frankfurt' to include 'machine.region'      
+                      actual expected
+                      
+                      'Region: Frankfurt'undefined
+                      </message>
+                <stack-trace>AssertionError: expected 'Region: Frankfurt' to include 'machine.region'
+                    at Context.&lt;anonymous> (E:\Automated testing\STAGE_2\Framework\test\smokeTests\gccTest.js:57:26)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1641220126179' status='passed' stop='1641220126604'>
+            <name>should Local SSD 2x375 GiB</name>
+            <title>should Local SSD 2x375 GiB</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='2a56c7fc-1de8-426c-8fe8-b8cfc40c6327-attachment.png' type='image/png' size='124739'/>
+                <attachment title='Screenshot' source='b9c83f60-121c-49b4-a4ea-b7964733f197-attachment.png' type='image/png' size='122056'/>
+            </attachments>
+        </test-case>
+        <test-case start='1641220126604' status='passed' stop='1641220126641'>
+            <name>should commitment term be 1 Year</name>
+            <title>should commitment term be 1 Year</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1641220126641' status='passed' stop='1641220126775'>
+            <name>should final Total estimated cost per one month correspond cost recieved with manual testing</name>
+            <title>should final Total estimated cost per one month correspond cost recieved with manual testing</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1641220126776' status='passed' stop='1641220137968'>
+            <name>should total cost shown in calculator coincide with cost shown in letter</name>
+            <title>should total cost shown in calculator coincide with cost shown in letter</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
