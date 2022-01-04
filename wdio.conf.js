@@ -1,5 +1,5 @@
 //const params = require('../Framework/yargs');
-const brows = require('./browsers');
+const brows = require('./config/browsers');
 const ENV = process.env.ENV;
 
 exports.config = {
@@ -239,27 +239,11 @@ exports.config = {
    * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
    */
   afterTest: function (test, context, { error, result, duration, passed, retries }) {
-    function addZero(t) {
-      if (t < 10) {
-        return '0' + t;
-      }
-      return t;
-    }
-
-    function getTime(time = new Date()) {
-      const Y = time.getFullYear();
-      const M = addZero(time.getMonth() + 1);
-      const D = addZero(time.getDate());
-      const H = addZero(time.getHours());
-      const MN = addZero(time.getMinutes());
-      const S = addZero(time.getSeconds());
-
-      return `${Y}-${M}-${D}-${H}-${MN}-${S}`;
-    }
+    const timeStamp = new Date().toISOString().replace(/:/g, '-');
 
     if (error) {
       browser.takeScreenshot();
-      browser.saveScreenshot(`./screenshots/${getTime()}.png`);
+      browser.saveScreenshot(`./screenshots/${timeStamp}.png`);
     }
   },
 
